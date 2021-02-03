@@ -1,10 +1,11 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/bcd_count_7_isim_beh.exe -prj D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/bcd_count_7_beh.prj work.bcd_count_7 work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/bcd_count_tb_example_isim_beh.exe -prj D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/bcd_count_tb_example_beh.prj work.bcd_count_tb_example work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/binary_bcd.v" into library work
 Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/final_bcd_counter.v" into library work
+Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/example_bcd_count_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 ERROR:HDLCompiler:1654 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/final_bcd_counter.v" Line 18: Instantiating <counter> from unknown module <prog_count_7>

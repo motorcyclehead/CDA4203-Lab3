@@ -9,7 +9,7 @@ input run, CLK;
 output [6:0] count_out;
 
 // Wires/Registers required go here.
-reg [6:0] count_out, max_count;
+wire [6:0] count_out;
 
 // 7-bit counter instance
 count_7 counter_1(.run(run),
@@ -29,4 +29,4 @@ always @(posedge CLK) begin
 	end 
 end
 	
-		
+endmodule 
