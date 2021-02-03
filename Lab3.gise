@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab3.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="count_7.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="count_7.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="count_7.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1612373540" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1612373540">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1612375047" xil_pn:in_ck="-7096256390882022246" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1612375047">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="binary_bcd.v"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="example_bcd_count_tb.v"/>
+      <outfile xil_pn:name="final_bcd_counter.v"/>
+      <outfile xil_pn:name="prog_counter.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1612373636" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8472305712791946210" xil_pn:start_ts="1612373636">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1612373636" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8928276654682239012" xil_pn:start_ts="1612373636">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1612373540" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8832560292576122861" xil_pn:start_ts="1612373540">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1612375047" xil_pn:in_ck="-7096256390882022246" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1612375047">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="binary_bcd.v"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="example_bcd_count_tb.v"/>
+      <outfile xil_pn:name="final_bcd_counter.v"/>
+      <outfile xil_pn:name="prog_counter.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1612375048" xil_pn:in_ck="-7096256390882022246" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1649168540280820421" xil_pn:start_ts="1612375047">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>
