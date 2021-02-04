@@ -9,22 +9,24 @@ input run, CLK;
 output [6:0] count_out;
 
 // Wires/Registers required go here.
-wire [6:0] count_out;
+reg [6:0] count_out;
+wire [6:0} counter;
 
 // 7-bit counter instance
 count_7 counter_1(.run(run),
 		  .CLK(CLK),
-		  .count_out(count_out));
+		  .count_out(counter));
 
 
 // TODO: Write logic for Counter control
-//In your always block, first check if run == 0, then read //max_count. Compare max_count with count_out to stop.
+//In your always block, first check if run == 0, then read 
+//max_count. Compare max_count with count_out to stop.
 
 always @(posedge CLK) begin
 
-	if((run == 1) & (count_out < 99)) begin
-		if(count_out < max_count) begin
-			assign count_out = count_out;
+	if((run == 1) & (counter < 100)) begin
+		if(count_out < max_count +1) begin
+			count_out = counter;
 		end
 	end 
 end
