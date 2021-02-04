@@ -10,6 +10,7 @@ output [6:0] count_out;
 
 // Wires/Registers required go here.
 reg [6:0] count_out;
+reg [6:0] max;
 wire [6:0] counter;
 
 // 7-bit counter instance
