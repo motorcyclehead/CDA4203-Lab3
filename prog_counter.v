@@ -25,7 +25,7 @@ count_7 counter_1(.run(run),
 always @(posedge CLK) begin
 
 	if((run == 1) & (counter < 100)) begin
-		if(count_out < max_count +1) begin
+		if(counter < max_count +1) begin
 			count_out = counter;
 		end
 	end 
