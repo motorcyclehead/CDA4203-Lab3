@@ -10,7 +10,7 @@ output [6:0] count_out;
 
 // Wires/Registers required go here.
 reg [6:0] count_out;
-wire [6:0} counter;
+wire [6:0] counter;
 
 // 7-bit counter instance
 count_7 counter_1(.run(run),
@@ -24,7 +24,11 @@ count_7 counter_1(.run(run),
 
 always @(posedge CLK) begin
 
-	if((run == 1) & (counter < 100)) begin
+	if(run == 0) begin
+		count_out = 0;
+	end
+
+	else if((run == 1) & (counter < 100)) begin
 		if(counter < max_count +1) begin
 			count_out = counter;
 		end

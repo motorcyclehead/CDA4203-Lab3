@@ -3,10 +3,23 @@ ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/counter.v" into library work
+Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/prog_counter.v" into library work
 Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/binary_bcd.v" into library work
 Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/final_bcd_counter.v" into library work
 Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/example_bcd_count_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-ERROR:HDLCompiler:1654 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/final_bcd_counter.v" Line 18: Instantiating <counter> from unknown module <prog_count_7>
-ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed
+Completed static elaboration
+Compiling module count_7
+Compiling module prog_count_7
+Compiling module binary_bcd_2
+Compiling module bcd_count_7
+Compiling module bcd_count_tb_example
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/bcd_count_tb_example_isim_beh.exe
+Fuse Memory Usage: 28008 KB
+Fuse CPU Usage: 312 ms

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: bcd_count_7.prj
 
@@ -109,14 +109,341 @@ Analyzing Verilog file "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\co
 Parsing module <count_7>.
 Analyzing Verilog file "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\prog_counter.v" into library work
 Parsing module <prog_count_7>.
-ERROR:HDLCompiler:1660 - "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\prog_counter.v" Line 27: Procedural assignment to a non-register count_out is not permitted, left-hand side should be reg/integer/time/genvar
-ERROR:HDLCompiler:598 - "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\prog_counter.v" Line 5: Module <prog_count_7> ignored due to previous errors.
-Verilog file D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\prog_counter.v ignored due to errors
+Analyzing Verilog file "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\binary_bcd.v" into library work
+Parsing module <binary_bcd_2>.
+Analyzing Verilog file "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\final_bcd_counter.v" into library work
+Parsing module <bcd_count_7>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <bcd_count_7>.
+
+Elaborating module <prog_count_7>.
+
+Elaborating module <count_7>.
+
+Elaborating module <binary_bcd_2>.
+WARNING:HDLCompiler:413 - "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\binary_bcd.v" Line 21: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <bcd_count_7>.
+    Related source file is "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\final_bcd_counter.v".
+    Summary:
+	no macro.
+Unit <bcd_count_7> synthesized.
+
+Synthesizing Unit <prog_count_7>.
+    Related source file is "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\prog_counter.v".
+    Found 7-bit register for signal <count_out>.
+    Found 8-bit adder for signal <n0016> created at line 28.
+    Found 7-bit comparator greater for signal <counter[6]_PWR_2_o_LessThan_3_o> created at line 27
+    Found 8-bit comparator lessequal for signal <GND_2_o_BUS_0001_LessThan_5_o> created at line 28
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <prog_count_7> synthesized.
+
+Synthesizing Unit <count_7>.
+    Related source file is "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\counter.v".
+    Found 7-bit register for signal <count_out>.
+    Found 7-bit adder for signal <count_out[6]_GND_3_o_add_3_OUT> created at line 20.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+Unit <count_7> synthesized.
+
+Synthesizing Unit <binary_bcd_2>.
+    Related source file is "D:\Users\toro0\Spring 2021\CDA 4203\Xilinx files\Lab3\binary_bcd.v".
+    Found 4-bit adder for signal <n0033> created at line 21.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_4_OUT> created at line 21.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_7_OUT> created at line 21.
+    Found 4-bit adder for signal <n0043> created at line 18.
+    Found 4-bit adder for signal <GND_4_o_GND_4_o_add_13_OUT> created at line 21.
+    Found 3-bit comparator lessequal for signal <n0000> created at line 20
+    Found 4-bit comparator lessequal for signal <n0004> created at line 20
+    Found 4-bit comparator lessequal for signal <n0008> created at line 20
+    Found 3-bit comparator lessequal for signal <n0012> created at line 17
+    Found 4-bit comparator lessequal for signal <n0016> created at line 20
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <binary_bcd_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 4-bit adder                                           : 5
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 2
+ 7-bit register                                        : 2
+# Comparators                                          : 7
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator lessequal                            : 3
+ 7-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 4-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <count_7>.
+The following registers are absorbed into counter <count_out>: 1 register on signal <count_out>.
+Unit <count_7> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 5
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Comparators                                          : 7
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator lessequal                            : 3
+ 7-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 4-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <bcd_count_7> ...
+
+Optimizing unit <prog_count_7> ...
+
+Optimizing unit <binary_bcd_2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bcd_count_7, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : bcd_count_7.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 39
+#      INV                         : 2
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT4                        : 3
+#      LUT5                        : 15
+#      LUT6                        : 15
+# FlipFlops/Latches                : 14
+#      FD                          : 7
+#      FDRE                        : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 8
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              14  out of  54576     0%  
+ Number of Slice LUTs:                   39  out of  27288     0%  
+    Number used as Logic:                39  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     39
+   Number with an unused Flip Flop:      25  out of     39    64%  
+   Number with an unused LUT:             0  out of     39     0%  
+   Number of fully used LUT-FF pairs:    14  out of     39    35%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    218     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 14    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.693ns (Maximum Frequency: 270.816MHz)
+   Minimum input arrival time before clock: 5.663ns
+   Maximum output required time after clock: 6.148ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.693ns (frequency: 270.816MHz)
+  Total number of paths / destination ports: 169 / 14
+-------------------------------------------------------------------------
+Delay:               3.693ns (Levels of Logic = 3)
+  Source:            counter/counter_1/count_out_4 (FF)
+  Destination:       counter/count_out_5 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: counter/counter_1/count_out_4 to counter/count_out_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.447   1.031  counter/counter_1/count_out_4 (counter/counter_1/count_out_4)
+     LUT4:I1->O            3   0.205   0.651  counter/_n0022_inv1 (counter/_n0022_inv1)
+     LUT5:I4->O            6   0.205   0.849  counter/_n0022_inv2_SW3 (N8)
+     LUT6:I4->O            1   0.203   0.000  counter/count_out_5_rstpot (counter/count_out_5_rstpot)
+     FD:D                      0.102          counter/count_out_5
+    ----------------------------------------
+    Total                      3.693ns (1.162ns logic, 2.531ns route)
+                                       (31.5% logic, 68.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 322 / 21
+-------------------------------------------------------------------------
+Offset:              5.663ns (Levels of Logic = 5)
+  Source:            max_count<2> (PAD)
+  Destination:       counter/count_out_6 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: max_count<2> to counter/count_out_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.912  max_count_2_IBUF (max_count_2_IBUF)
+     LUT3:I0->O            4   0.205   1.028  counter/_n001941 (counter/_n00194)
+     LUT6:I1->O            1   0.203   0.808  counter/_n001911 (counter/_n00191)
+     LUT6:I3->O            7   0.205   0.774  counter/_n001916 (counter/_n00192)
+     LUT5:I4->O            1   0.205   0.000  counter/count_out_6_rstpot (counter/count_out_6_rstpot)
+     FD:D                      0.102          counter/count_out_6
+    ----------------------------------------
+    Total                      5.663ns (2.142ns logic, 3.521ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 83 / 8
+-------------------------------------------------------------------------
+Offset:              6.148ns (Levels of Logic = 3)
+  Source:            counter/count_out_5 (FF)
+  Destination:       digit_1<0> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: counter/count_out_5 to digit_1<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.118  counter/count_out_5 (counter/count_out_5)
+     LUT5:I0->O            4   0.203   1.028  bcd_converter/Mmux_GND_4_o_GND_4_o_mux_8_OUT21 (bcd_converter/Madd_GND_4_o_GND_4_o_add_13_OUT_lut<2>)
+     LUT5:I0->O            1   0.203   0.579  bcd_converter/Mmux_digit_241 (digit_1_0_OBUF)
+     OBUF:I->O                 2.571          digit_1_0_OBUF (digit_1<0>)
+    ----------------------------------------
+    Total                      6.148ns (3.424ns logic, 2.724ns route)
+                                       (55.7% logic, 44.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.693|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.64 secs
+ 
 --> 
 
-Total memory usage is 4448712 kilobytes
+Total memory usage is 4485716 kilobytes
 
-Number of errors   :    2 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

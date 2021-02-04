@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-02-03T16:39:41</DateModified>
+  <DateModified>2021-02-04T14:54:28</DateModified>
   <ModuleName>bcd_count_7</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3/iseconfig/bcd_count_7.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab3\</ImplementationReportsDirectory>
   <DateInitialized>2021-02-03T16:39:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
